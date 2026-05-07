@@ -1,0 +1,65 @@
+<!-- index.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+
+      <nav class="navbar">
+        <h3>Music App</h3>
+
+        <ul class="lists">
+          <li>Category</li>
+          <li>All Songs</li>
+          <li>About Us</li>
+          <li>Get Latest</li>
+        </ul>
+      </nav>
+
+      <!-- Banner -->
+
+      <h1 class="welcome-heading">Welcome to the world of music 🎵</h1>
+
+      <div class="banner">
+        <div class="banner-img">
+          <img src="./images/banner.png" alt="Music Banner" />
+        </div>
+
+        <div class="text">
+          <p>
+            Discover millions of songs, trending albums, and your favorite
+            artists all in one place.
+          </p>
+        </div>
+      </div>
+
+      <!-- Music Player -->
+
+      <div class="music-player">
+        <!-- Song Image -->
+
+        <img src="./images/shape-of-you.jpg" alt="song image" id="song-image" />
+
+        <h2 id="song-title">Song Name</h2>
+
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <button id="prev">⏮</button>
+          <button id="play">▶</button>
+          <button id="next">⏭</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

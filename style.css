@@ -1,0 +1,178 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #111827;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2937;
+}
+
+.navbar h3 {
+  font-size: 28px;
+  color: #60a5fa;
+}
+
+.lists {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.lists li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lists li:hover {
+  color: #60a5fa;
+}
+
+/* Heading */
+
+.welcome-heading {
+  color: #60a5fa;
+  text-align: center;
+  padding: 15px;
+  background: #e5e7eb;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 35px;
+}
+
+/* Banner */
+
+.banner {
+  width: 90%;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #1f2937;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.banner-img img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+/* Music Player */
+
+.music-player {
+  width: 400px;
+  margin: 40px auto;
+  background: #1f2937;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.music-player h2 {
+  margin-bottom: 20px;
+  color: #60a5fa;
+}
+
+#progress {
+  width: 100%;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.controls button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #3b82f6;
+  transform: scale(1.1);
+}
+
+#play {
+  width: 75px;
+  height: 75px;
+  font-size: 30px;
+}
+
+/* Add this in style.css */
+
+#song-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lists {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .music-player {
+    width: 90%;
+  }
+
+  .welcome-heading {
+    font-size: 24px;
+  }
+}
